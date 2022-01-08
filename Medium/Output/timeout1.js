@@ -3,10 +3,11 @@
         for(var j = 1; j<=2; j++ ){ //2 times
             var k = i+j
             setTimeout(()=> {
-                console.log(k);
+                console.log("k is = ", k);
             }, 200)
         }
     }
+    console.log("i is = " ,i)
  }
 
  usingVarSetTimeout()
@@ -18,16 +19,17 @@
         j = 2               <= 2
         k = 4
 
-    global - stack
+    global - Async stack
         setTimeout(k = 4, 200)
         setTimeout(k = 4, 200)
         setTimeout(k = 4, 200)
         setTimeout(k = 4, 200)
 
     Output
-    4
-    4
-    4
-    4
+        i is =  3
+        k is =  4
+        k is =  4
+        k is =  4
+        k is =  4
 
 */
